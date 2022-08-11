@@ -1,0 +1,159 @@
+:root {
+  --clr-primary-100: hsl(225, 100%, 94%);
+  --clr-primary-600: hsl(245, 75%, 52%);
+  --clr-neutral-100: hsl(225, 100%, 98%);
+  --clr-neutral-300: hsl(224, 23%, 55%);
+  --clr-neutral-700: hsl(223, 47%, 23%);
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background: url(../images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: var(--clr-primary-100);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 0.7em;
+  color: var(--clr-neutral-700);
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 900;
+  color: var(--clr-neutral-700);
+}
+
+p {
+  color: var(--clr-neutral-300);
+}
+
+a {
+  color: var(--clr-primary-600);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+main {
+  height: 100vh;
+}
+main article {
+  flex-direction: column;
+  gap: 1.6em;
+  border-radius: 15px;
+  max-width: 25rem;
+  margin-inline: 1.5em;
+  background-color: white;
+  box-shadow: 0 20px 20px 6px rgba(54, 43, 220, 0.1);
+}
+main article picture img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+main section {
+  width: 85%;
+  text-align: center;
+}
+main section > p {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+main section .plan {
+  max-width: 20.5rem;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 15px;
+  background-color: var(--clr-neutral-100);
+  margin-top: 1.5em;
+  margin-bottom: 1.2em;
+  margin-inline: auto;
+}
+main section .plan .left-plan {
+  gap: 1em;
+}
+main section .plan > div {
+  flex-direction: row;
+}
+main section .plan > div > div > p {
+  margin-top: 0.25em;
+  font-size: 14px;
+}
+main section .plan a {
+  margin-right: 0.5em;
+}
+main section button {
+  max-width: 20.5rem;
+  width: 100%;
+  padding-block: 1em;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--clr-primary-600);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 1.8em;
+  box-shadow: 0 20px 20px rgba(54, 43, 220, 0.25);
+}
+main section > a {
+  display: block;
+  text-decoration: none;
+  color: var(--clr-neutral-300);
+  font-size: 15px;
+  margin-bottom: 1.8em;
+}
+
+.plan a:hover {
+  color: hsl(245deg, 100%, 70%);
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: hsl(245deg, 100%, 70%);
+}
+
+button + a:hover {
+  color: var(--clr-neutral-700);
+}
+
+@media (min-width: 450px) {
+  h1 {
+    margin-top: 0.6em;
+    margin-bottom: 0.9em;
+  }
+  article {
+    padding-bottom: 1.6em;
+  }
+  button {
+    margin-top: 1em;
+  }
+  button + a {
+    margin-top: 0.8em;
+  }
+}/*# sourceMappingURL=style.css.map */
